@@ -10,7 +10,7 @@ body {
   color: white;
   font-family: 'GothamPro';
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 li {
@@ -44,7 +44,7 @@ a {
 
 /* SIDEBAR MAIN MENU */
 .main-menu {
-  background-color: black;
+  background-color: #191414;
   width: 300px;
   min-width: 300px;
   flex-flow: column;
@@ -69,7 +69,7 @@ a {
 }
 
 .main-menu-top li a {
-  color: white;
+  color: #535353;
   display: flex;
   align-items: center;
 }
@@ -84,6 +84,7 @@ a {
 }
 
 .home li a:hover {
+  color: white;
   border-left: 3px solid greenyellow;
 }
 
@@ -105,7 +106,7 @@ a {
 
 .crea-playlist .fas {
   font-size: 40px;
-  color: white;
+  color: #535353;
 }
 
 .crea-playlist a {
@@ -113,14 +114,23 @@ a {
   align-items: center;
 }
 
-.crea-playlist span {
+.crea-playlist a:hover .fas,
+.crea-playlist a:hover span {
   color: white;
+}
+
+.crea-playlist span {
+  color: #535353;
   margin-left: 10px;
   font-size: 1rem;
 }
 
 .nome-playlist ul li {
   margin: 20px 0;
+}
+
+.nome-playlist li a:hover {
+  color: white;
 }
 
 .main-menu-bottom {
@@ -131,6 +141,10 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  color: #535353;
+}
+
+.installa a:hover {
   color: white;
 }
 
@@ -140,7 +154,7 @@ a {
 }
 
 .username {
-  border-top: 1px solid grey;
+  border-top: 1px solid #535353;
   padding: 15px 15px 10px 0;
 }
 
@@ -157,7 +171,7 @@ a {
 
 .username img {
   width: 25px;
-  background-color: grey;
+  background-color: #535353;
   border-radius: 100%;
   margin-right: 10px;
 }
@@ -191,6 +205,6 @@ a {
 
 /* SITE FOOTER */
 footer.site_footer {
-  background-color: yellowgreen;
+  background-color: #1DB954;
   height: 60px;
 }
