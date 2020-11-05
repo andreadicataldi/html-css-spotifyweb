@@ -44,7 +44,7 @@ a {
 
 /* SIDEBAR MAIN MENU */
 .main-menu {
-  background-color: #191414;
+  background-color: #000000;
   width: 300px;
   min-width: 300px;
   flex-flow: column;
@@ -52,7 +52,7 @@ a {
 }
 
 .logo {
-  padding: 15px;
+  padding: 20px 0 0 20px;
 }
 
 .logo>img {
@@ -69,7 +69,7 @@ a {
 }
 
 .main-menu-top li a {
-  color: #535353;
+  color: #a3a3a3;
   display: flex;
   align-items: center;
 }
@@ -79,13 +79,13 @@ a {
 }
 
 .home li a {
-  padding-left: 15px;
+  padding-left: 20px;
   height: 45px;
 }
 
 .home li a:hover {
   color: white;
-  border-left: 3px solid greenyellow;
+  border-left: 3px solid #adff2f;
 }
 
 .home span {
@@ -96,17 +96,17 @@ a {
   font-size: 1.0rem;
   font-weight: 600;
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .crea-playlist,
 .nome-playlist {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .crea-playlist .fas {
   font-size: 40px;
-  color: #535353;
+  color: #a3a3a3;
 }
 
 .crea-playlist a {
@@ -120,7 +120,7 @@ a {
 }
 
 .crea-playlist span {
-  color: #535353;
+  color: #a3a3a3;
   margin-left: 10px;
   font-size: 1rem;
 }
@@ -134,14 +134,14 @@ a {
 }
 
 .main-menu-bottom {
-  padding: 15px 15px 0;
+  padding: 20px 20px 0;
 }
 
 .installa a {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: #535353;
+  color: #a3a3a3;
 }
 
 .installa a:hover {
@@ -154,7 +154,7 @@ a {
 }
 
 .username {
-  border-top: 1px solid #535353;
+  border-top: 1px solid #a3a3a3;
   padding: 15px 15px 10px 0;
 }
 
@@ -171,14 +171,15 @@ a {
 
 .username img {
   width: 25px;
-  background-color: #535353;
+  height: 25px;
+  background-color: #a3a3a3;
   border-radius: 100%;
   margin-right: 10px;
 }
 
 /* COVERS SECTION */
 .covers_section {
-  background-color: aquamarine;
+  background-color: #141922;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 20px;
@@ -205,6 +206,6 @@ a {
 
 /* SITE FOOTER */
 footer.site_footer {
-  background-color: #1DB954;
+  background-color: #282828;
   height: 60px;
 }
