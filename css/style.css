@@ -1,0 +1,72 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+/* WRAPPER */
+.wrapper {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* MAIN SITE CONTENT */
+.site_content {
+    height: calc(100% - 60px);
+}
+
+/* SIDEBAR MAIN MENU */
+aside.main_menu {
+    background-color: black;
+    width: 300px;
+    min-width: 300px;
+}
+
+/* COVERS SECTION */
+.covers_section {
+    background-color: aquamarine;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    padding-top: 60px;
+    width: calc(100% - 300px);
+}
+
+/* SUBSCRIBE BANNER */
+.subscribe_banner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: calc(100% - 300px);
+    background-color: #8a2be2a1;
+}
+
+/* RECENTLY PLAYED SECTION */
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* SITE FOOTER */
+footer.site_footer {
+    background-color: yellowgreen;
+    height: 60px;
+}
