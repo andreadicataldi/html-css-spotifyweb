@@ -39,7 +39,7 @@ a {
 
 /* MAIN SITE CONTENT */
 .site-content {
-  height: calc(100% - 60px);
+  height: calc(100% - 100px);
 }
 
 /* SIDEBAR MAIN MENU */
@@ -183,7 +183,7 @@ a {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 20px;
-  padding-top: 60px;
+  padding-top: 100px;
   width: calc(100% - 300px);
 }
 
@@ -192,9 +192,35 @@ a {
   position: fixed;
   top: 0;
   right: 0;
-  height: 60px;
+  height: 100px;
   width: calc(100% - 300px);
-  background-color: #8a2be2a1;
+  background-color: #00000087;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.subscribe {
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 22px 38px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 25px;
+  border-radius: 25px;
+  height: 35px;
+  line-height: 0px;
+  cursor: pointer;
+}
+
+nav {
+  justify-content: center;
+}
+
+nav a {
+  margin: 20px 15px;
+  color: #a3a3a3;
 }
 
 /* RECENTLY PLAYED SECTION */
@@ -207,5 +233,5 @@ a {
 /* SITE FOOTER */
 footer.site_footer {
   background-color: #282828;
-  height: 60px;
+  height: 100px;
 }
