@@ -235,3 +235,98 @@ footer.site_footer {
   background-color: #282828;
   height: 100px;
 }
+
+.player {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.track {
+  width: 17%;
+  justify-content: space-between;
+}
+
+.track-cover {
+  align-items: center;
+}
+
+.track-cover img {
+  height: 50px;
+  margin: 0 15px;
+}
+
+.track-fav {
+  align-items: center;
+}
+
+.track-fav i {
+  font-size: 1rem;
+  margin: 0 6px;
+}
+
+.play {
+  flex-flow: column;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.play i {
+  font-size: 1.1rem;
+  margin: 0 15px 15px;
+}
+
+.play-controls {
+  justify-content: center;
+  align-items: center;
+}
+
+.play-controls>i.far.fa-play-circle {
+  font-size: 2rem;
+}
+
+.timebar {
+  flex-flow: row;
+  align-items: center;
+}
+
+
+.timebar .cursor {
+  width: 100%;
+  background-color: gray;
+  height: 5px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.timebar .cursor-overlay {
+  width: 25%;
+  background-color: lightgray;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.controls {
+  width: 20%;
+  align-items: center;
+}
+
+.controls i {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.controls .cursor {
+  width: 100%;
+  background-color: gray;
+  height: 5px;
+  border-radius: 10px;
+  margin: 0 20px 0 5px;
+}
+
+.controls .cursor-overlay {
+  width: 25%;
+  background-color: lightgray;
+  height: 5px;
+  border-radius: 10px;
+}
