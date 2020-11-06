@@ -22,8 +22,8 @@ a {
 }
 
 [class*="col-"] {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 /* UTILITY CLASSES */
@@ -50,8 +50,8 @@ a {
 /* SIDEBAR MAIN MENU */
 .main-menu {
   background-color: #000000;
-  width: 300px;
-  min-width: 300px;
+  width: 250px;
+  min-width: 250px;
   flex-flow: column;
   justify-content: space-between;
 }
@@ -90,7 +90,6 @@ a {
 
 .home li a:hover {
   color: white;
-  border-left: 3px solid #adff2f;
 }
 
 .home span {
@@ -189,7 +188,7 @@ a {
   overflow-x: hidden;
   padding: 15px;
   padding-top: 100px;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
 }
 
 .item {
@@ -203,7 +202,7 @@ a {
   top: 0;
   right: 0;
   height: 100px;
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   background-color: #00000087;
   justify-content: flex-end;
   align-items: center;
@@ -284,8 +283,11 @@ footer.site_footer {
   height: 100%;
 }
 
-.track {
+.track, .controls {
   width: 17%;
+}
+
+.track {
   justify-content: space-between;
 }
 
@@ -298,6 +300,16 @@ footer.site_footer {
   margin: 0 15px;
 }
 
+.track-cover h4 {
+  font-weight: 600;
+}
+
+.track-cover p {
+  color: #a3a3a3;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
 .track-fav {
   align-items: center;
 }
@@ -305,6 +317,7 @@ footer.site_footer {
 .track-fav i {
   font-size: 1rem;
   margin: 0 6px;
+  color: #a3a3a3;
 }
 
 .play {
@@ -348,14 +361,17 @@ footer.site_footer {
   border-radius: 10px;
 }
 
+.time {
+  font-size: 0.7rem;
+}
+
 .controls {
-  width: 20%;
   align-items: center;
 }
 
 .controls i {
   margin: 0 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .controls .cursor {
@@ -371,4 +387,31 @@ footer.site_footer {
   background-color: lightgray;
   height: 5px;
   border-radius: 10px;
+}
+
+/* MEDIA QUERY MD */
+@media all and (min-width: 769px) and (max-width: 1200px) {
+
+  .track,
+  .controls {
+    width: 25%;
+  }
+
+  .item h4 {
+    line-height: 1rem;
+  }
+}
+
+/* MEDIA QUERY SM */
+@media all and (max-width: 768px) {
+
+  .track,
+  .controls {
+    width: 25%;
+  }
+
+  .track-fav {
+    flex-flow: column;
+    justify-content: space-around;
+  }
 }
