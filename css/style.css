@@ -233,6 +233,10 @@ nav a {
   color: #a3a3a3;
 }
 
+nav a:hover {
+  color: white;
+}
+
 /* RECENTLY PLAYED SECTION */
 .covers_section h2 {
   font-size: 1.5rem;
@@ -241,6 +245,7 @@ nav a {
 
 .item img {
   width: 100%;
+  max-width: 200px;
   margin-bottom: 15px;
 }
 
@@ -261,6 +266,10 @@ nav a {
   color: #a3a3a3;
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.popular img {
+  border-radius: 50%;
 }
 
 /* SITE FOOTER */
