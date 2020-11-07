@@ -73,7 +73,7 @@ i {
 }
 
 .logo>img {
-  width: 70%;
+  width: 65%;
 }
 
 .main-menu-top a,
@@ -97,11 +97,13 @@ i {
 
 .home li a {
   padding-left: 20px;
-  height: 45px;
+  height: 40px;
+  border-left: 3px solid black;
 }
 
 .home li a:hover {
   color: white;
+  border-left: 3px solid rgb(157, 255, 0);
 }
 
 .home span {
@@ -113,6 +115,7 @@ i {
   font-weight: 600;
   margin-bottom: 15px;
   margin-left: 20px;
+  border-left: 3px solid black;
 }
 
 .crea-playlist,
@@ -123,6 +126,7 @@ i {
 .crea-playlist .fas {
   font-size: 40px;
   color: #a3a3a3;
+  border-left: 3px solid black;
 }
 
 .crea-playlist a {
@@ -142,7 +146,8 @@ i {
 }
 
 .nome-playlist ul li {
-  margin: 20px 0;
+  margin: 25px 0;
+  border-left: 3px solid black;
 }
 
 .nome-playlist li a:hover {
