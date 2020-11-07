@@ -21,7 +21,10 @@ a {
   text-decoration: none;
 }
 
-img, h4, p, i {
+img,
+h4,
+p,
+i {
   cursor: pointer;
 }
 
@@ -232,6 +235,7 @@ img, h4, p, i {
   cursor: pointer;
 }
 
+/* NAV */
 nav {
   justify-content: center;
 }
@@ -254,12 +258,13 @@ nav a:hover {
 .item img {
   width: 100%;
   max-width: 200px;
-  margin-bottom: 15px;
+  max-height: 200px;
 }
 
 .item h4 {
   font-size: 1rem;
   font-weight: 600;
+  margin-top: 15px;
   margin-bottom: 5px;
 }
 
@@ -269,6 +274,41 @@ nav a:hover {
   font-weight: 500;
 }
 
+.cover-image {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cover-overlay,
+.cover-overlay-rounded {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover-overlay-rounded {
+  border-radius: 50%;
+}
+
+.cover-overlay i,
+.cover-overlay-rounded i {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+}
+
+.cover-image:hover .cover-overlay,
+.cover-image:hover .cover-overlay-rounded {
+  display: block;
+}
+
+
+
 .subtitle {
   cursor: auto;
   margin-top: 10px;
@@ -277,6 +317,7 @@ nav a:hover {
   font-weight: 500;
 }
 
+/* POPULAR */
 .popular img {
   border-radius: 50%;
 }
@@ -364,6 +405,7 @@ footer.site_footer {
   height: 5px;
   border-radius: 10px;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .timebar .cursor-overlay {
@@ -392,6 +434,7 @@ footer.site_footer {
   height: 5px;
   border-radius: 10px;
   margin: 0 20px 0 5px;
+  cursor: pointer;
 }
 
 .controls .cursor-overlay {
@@ -491,5 +534,14 @@ footer.site_footer {
   .controls i {
     margin: 0 2px;
     font-size: 0.9rem;
+  }
+
+  .track-cover img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .play-controls i {
+    font-size: 15px;
   }
 }
