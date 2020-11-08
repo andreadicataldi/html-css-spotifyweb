@@ -103,7 +103,7 @@ i {
 
 .home li a:hover {
   color: white;
-  border-left: 3px solid rgb(157, 255, 0);
+  border-left: 3px solid #adff2f;
 }
 
 .home span {
@@ -248,10 +248,29 @@ nav {
 nav a {
   margin: 25px 15px;
   color: #a3a3a3;
+  position: relative;
 }
 
 nav a:hover {
+  transform: scale(1.0);
   color: white;
+}
+
+nav a span::after {
+  position: absolute;
+  content: '';
+  clear: both;
+  display: table;
+  width: 35px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #adff2f;
+  visibility: hidden;
+}
+
+nav a span:hover::after {
+  visibility: visible;
 }
 
 /* RECENTLY PLAYED SECTION */
