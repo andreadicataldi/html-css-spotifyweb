@@ -309,6 +309,7 @@ nav a span:hover::after {
 
 .item {
   max-width: 200px;
+  min-height: 282px;
 }
 
 .item img {
