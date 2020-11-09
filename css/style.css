@@ -102,6 +102,7 @@ i {
 }
 
 .home li a:hover {
+  transition: 0.5s;
   color: white;
   border-left: 3px solid #adff2f;
 }
@@ -136,6 +137,7 @@ i {
 
 .crea-playlist a:hover .fas,
 .crea-playlist a:hover span {
+  transition: 0.5s;
   color: white;
 }
 
@@ -151,6 +153,7 @@ i {
 }
 
 .nome-playlist li a:hover {
+  transition: 0.5s;
   color: white;
 }
 
@@ -166,6 +169,7 @@ i {
 }
 
 .installa a:hover {
+  transition: 0.5s;
   color: white;
 }
 
@@ -240,6 +244,11 @@ i {
   cursor: pointer;
 }
 
+.subscribe:hover {
+  transition: 1ms;
+  transform: scale(1.05);
+}
+
 /* NAV */
 nav {
   justify-content: center;
@@ -252,6 +261,7 @@ nav a {
 }
 
 nav a:hover {
+  transition: 0.5s;
   transform: scale(1.0);
   color: white;
 }
@@ -271,6 +281,7 @@ nav a span::after {
 
 nav a span:hover::after {
   visibility: visible;
+  transition: 0.5s;
 }
 
 /* RECENTLY PLAYED SECTION */
@@ -278,6 +289,10 @@ nav a span:hover::after {
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 15px;
+}
+
+.item {
+  max-width: 200px;
 }
 
 .item img {
