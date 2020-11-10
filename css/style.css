@@ -225,6 +225,7 @@ i {
 .item {
   text-align: center;
   margin: 30px 0;
+  max-width: 200px;
 }
 
 
@@ -269,7 +270,7 @@ nav {
 }
 
 nav a {
-  margin: 25px 10px;
+  margin: 25px 15px;
   color: #a3a3a3;
   position: relative;
 }
@@ -305,11 +306,6 @@ nav a span:hover::after {
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 15px;
-}
-
-.item {
-  max-width: 200px;
-  min-height: 282px;
 }
 
 .item img {
@@ -515,6 +511,11 @@ footer.site_footer {
   .item h4 {
     line-height: 1rem;
   }
+
+  .recently-played>div>div>div:nth-child(6)>div,
+  .recently-played>div>div>div:nth-child(7)>div {
+    display: none;
+  }
 }
 
 
@@ -530,6 +531,13 @@ footer.site_footer {
   .track-fav {
     flex-flow: column;
     justify-content: space-around;
+  }
+
+  .recently-played>div>div>div:nth-child(4)>div,
+  .recently-played>div>div>div:nth-child(5)>div,
+  .recently-played>div>div>div:nth-child(6)>div,
+  .recently-played>div>div>div:nth-child(7)>div {
+    display: none;
   }
 }
 
@@ -607,5 +615,15 @@ footer.site_footer {
 
   .play-controls i {
     font-size: 15px;
+  }
+}
+
+@media all and (max-height: 880px) {
+  .subscribe_banner,
+  .main-menu-mobile-bottom {
+    display: none;
+  }
+  .main-menu-mobile-top {
+    margin-top: 50px;
   }
 }
