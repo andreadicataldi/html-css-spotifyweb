@@ -607,3 +607,13 @@ footer.site_footer {
     font-size: 15px;
   }
 }
+
+@media all and (max-height: 350px) {
+  .main-menu-mobile-top {
+    margin-top: 50px;
+  }
+
+  .main-menu-mobile-bottom {
+    display: none;
+  }
+}
